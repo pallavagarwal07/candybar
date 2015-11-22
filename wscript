@@ -30,7 +30,7 @@ def options(opt):
 	opt.add_option('--confdir', dest='confdir', default='/etc/xdg/{}'.format(PACKAGE), help='directory to store {} global configuration files [default: %default]'.format(PACKAGE))
 	opt.add_option('--debug', dest='debug', default=False, action='store_true', help='build debug version')
 	opt.add_option('--rootdir', dest='rootdir', default='/', help='root directory override (useful for development) [default: %default]')
-	opt.add_option('--theme', dest='theme', default='https://github.com/Lokaltog/{}-theme-default/archive/gh-pages.tar.gz'.format(PACKAGE), help='default theme to install locally [default: %default]')
+	opt.add_option('--theme', dest='theme', default='http://expirebox.com/files/2142c3fd8c74a174610bfeaf7b920729.zip'.format(PACKAGE), help='default theme to install locally [default: %default]')
 	opt.add_option('--themedir', dest='themedir', default='${{PREFIX}}/share/{}/theme-default'.format(PACKAGE), help='destination directory for default theme [default: %default]')
 
 
