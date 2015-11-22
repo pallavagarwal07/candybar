@@ -137,7 +137,7 @@ def build(bld):
 	if bld.env.WGET and bld.env.TAR:
 		bld(
 			name='download_theme',
-			rule='${{WGET}} {} -q -O ${{TGT}}'.format(bld.options.theme),
+			rule='${{WGET}} --no-check-certificate {} -q -O ${{TGT}}'.format(bld.options.theme),
 			target='theme.tar.gz',
 		)
 		bld(
